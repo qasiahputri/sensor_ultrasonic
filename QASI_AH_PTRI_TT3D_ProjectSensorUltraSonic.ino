@@ -26,9 +26,11 @@ void loop() {
   if(cm<=200)
   {
     digitalWrite(ledPin,HIGH);
-    
   }
-
+  else
+  {
+    digitalWrite(ledPin,LOW);
+  }
   Serial.print(cm);
   Serial.print("cm");
   Serial.println();
